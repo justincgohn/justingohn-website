@@ -194,10 +194,9 @@ body {
 
 /* Footer (Social Links) */
 .site-footer {
-  position: fixed;
-  bottom: var(--spacing-2xl);
-  left: calc(var(--nav-width) + var(--spacing-3xl));
-  right: var(--spacing-3xl);
+  margin-left: var(--nav-width);
+  padding: var(--spacing-3xl);
+  padding-top: var(--spacing-2xl);
   max-width: var(--content-max-width);
 }
 
