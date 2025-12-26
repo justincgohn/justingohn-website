@@ -181,10 +181,10 @@ body {
   flex: 1;
   margin-left: var(--nav-width);
   padding: var(--spacing-3xl);
+  padding-top: var(--spacing-3xl);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
+  justify-content: flex-start;
 }
 
 .content-wrapper {
@@ -285,8 +285,27 @@ p {
   height: 20px;
 }
 
+.home-intro {
+  margin-top: var(--spacing-xl);
+}
+
+.home-intro p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.home-intro a {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.home-intro a:hover {
+  color: var(--color-text-secondary);
+}
+
 .home-bottom {
-  margin-top: var(--spacing-3xl);
+  margin-top: var(--spacing-2xl);
 }
 
 .home-signature {
