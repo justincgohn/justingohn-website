@@ -1,0 +1,7 @@
+Replace this file with headshot.jpg
+
+The headshot image should be:
+- Square aspect ratio (will be cropped to circle)
+- At least 240x240 pixels (displays at 120x120, 2x for retina)
+- JPEG format
+- Named: headshot.jpg
