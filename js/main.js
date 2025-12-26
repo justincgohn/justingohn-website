@@ -84,3 +84,15 @@
     });
   });
 })();
+
+// ---------- Staggered Fade-Up Animations ----------
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    const fadeElements = document.querySelectorAll('.fade-up');
+    const staggerDelay = 0.08; // seconds between each element
+
+    fadeElements.forEach(function(el, index) {
+      el.style.animationDelay = (index * staggerDelay) + 's';
+    });
+  });
+})();

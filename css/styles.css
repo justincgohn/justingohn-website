@@ -105,6 +105,15 @@ body {
   min-height: 100vh;
 }
 
+/* Content area (everything except fixed nav) */
+.content-area {
+  flex: 1;
+  margin-left: var(--nav-width);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* Navigation (Left Sidebar) */
 .site-nav {
   position: fixed;
@@ -179,9 +188,7 @@ body {
 /* Main Content */
 .site-main {
   flex: 1;
-  margin-left: var(--nav-width);
   padding: var(--spacing-3xl);
-  padding-top: var(--spacing-3xl);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -194,10 +201,10 @@ body {
 
 /* Footer (Social Links) */
 .site-footer {
-  margin-left: var(--nav-width);
   padding: var(--spacing-3xl);
-  padding-top: var(--spacing-2xl);
+  padding-top: var(--spacing-lg);
   max-width: var(--content-max-width);
+  margin-top: auto;
 }
 
 .footer-divider {
@@ -478,18 +485,18 @@ p {
     gap: var(--spacing-lg);
   }
 
-  .site-main {
+  .content-area {
     margin-left: 0;
+    min-height: auto;
+  }
+
+  .site-main {
     padding: var(--spacing-xl);
     min-height: auto;
     justify-content: flex-start;
   }
 
   .site-footer {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    right: auto;
     max-width: 100%;
     padding: var(--spacing-xl);
   }
