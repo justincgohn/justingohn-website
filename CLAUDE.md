@@ -5,9 +5,12 @@
 **Code**: `/Users/justingohn/justingohn-website/`
 **Planning docs**: `My Drive/Personal/Career Online Ventures/justingohn.com Redesign/`
 
-## Status: Ready for Deployment
+## Status: LIVE - Awaiting DNS Propagation
 
-Site is fully built and tested locally. Awaiting GitHub Pages setup.
+**Deployed**: Dec 26, 2025
+**GitHub repo**: https://github.com/justincgohn/justingohn-website
+**Live URL**: https://justincgohn.github.io/justingohn-website/ (temporary)
+**Custom domain**: justingohn.com (pending DNS propagation)
 
 ## Quick Reference
 
@@ -38,12 +41,25 @@ Site is fully built and tested locally. Awaiting GitHub Pages setup.
 - Substack: justingohn.substack.com
 - X: @justincgohn
 
-## Deployment (Next Steps)
+## Deployment Status
 
-1. Create GitHub repo and push code
-2. Enable GitHub Pages in repo settings
-3. Configure custom domain (justingohn.com)
-4. Update DNS records at Bluehost
-5. Verify site works on custom domain
-6. Cancel Bluehost hosting subscription
-7. Cancel Elementor Pro annual subscription
+**Completed:**
+- [x] Created GitHub repo and pushed code
+- [x] Enabled GitHub Pages
+- [x] Configured custom domain (justingohn.com)
+- [x] Updated DNS at Namecheap (4 A records + CNAME for www)
+
+**DNS Records (Namecheap):**
+| Type | Host | Value |
+|------|------|-------|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | justincgohn.github.io |
+
+**Remaining:**
+- [ ] Verify DNS propagation (`dig justingohn.com +short`)
+- [ ] Enable "Enforce HTTPS" in GitHub repo settings (after SSL cert provisions)
+- [ ] Cancel Bluehost hosting (domain no longer points there - can cancel anytime)
+- [ ] Cancel Elementor Pro subscription
