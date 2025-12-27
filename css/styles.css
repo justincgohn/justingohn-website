@@ -417,6 +417,43 @@ p {
   border-color: var(--color-text-secondary);
 }
 
+/* Builds Page */
+.build-item {
+  padding: var(--spacing-lg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  margin-bottom: var(--spacing-lg);
+  transition: border-color var(--transition-fast);
+}
+
+.build-item:hover {
+  border-color: var(--color-text-secondary);
+}
+
+.build-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.build-item p {
+  margin-bottom: var(--spacing-md);
+}
+
+.build-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--color-text);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.build-link:hover {
+  color: var(--color-text-secondary);
+}
+
 /* ---------- Animations ---------- */
 .fade-up {
   opacity: 0;
