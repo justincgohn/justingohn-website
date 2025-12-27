@@ -5,12 +5,12 @@
 **Code**: `/Users/justingohn/justingohn-website/`
 **Planning docs**: `My Drive/Personal/Career Online Ventures/justingohn.com Redesign/`
 
-## Status: LIVE - Awaiting DNS Propagation
+## Status: LIVE ✓
 
 **Deployed**: Dec 26, 2025
 **GitHub repo**: https://github.com/justincgohn/justingohn-website
-**Live URL**: https://justincgohn.github.io/justingohn-website/ (temporary)
-**Custom domain**: justingohn.com (pending DNS propagation)
+**Live URL**: https://justingohn.com
+**SSL**: Cloudflare (proxy mode)
 
 ## Quick Reference
 
@@ -47,9 +47,10 @@
 - [x] Created GitHub repo and pushed code
 - [x] Enabled GitHub Pages
 - [x] Configured custom domain (justingohn.com)
-- [x] Updated DNS at Namecheap (4 A records + CNAME for www)
+- [x] SSL working via Cloudflare proxy
+- [x] Canceled Elementor Pro subscription
 
-**DNS Records (Namecheap):**
+**DNS (Cloudflare - proxied):**
 | Type | Host | Value |
 |------|------|-------|
 | A | @ | 185.199.108.153 |
@@ -58,8 +59,9 @@
 | A | @ | 185.199.111.153 |
 | CNAME | www | justincgohn.github.io |
 
+**Nameservers (Namecheap → Cloudflare):**
+- dorthy.ns.cloudflare.com
+- fred.ns.cloudflare.com
+
 **Remaining:**
-- [ ] Verify DNS propagation (`dig justingohn.com +short`)
-- [ ] Enable "Enforce HTTPS" in GitHub repo settings (after SSL cert provisions)
-- [ ] Cancel Bluehost hosting (domain no longer points there - can cancel anytime)
-- [ ] Cancel Elementor Pro subscription
+- [ ] Cancel Bluehost hosting (orphaned - domain no longer points there)
