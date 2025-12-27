@@ -437,6 +437,12 @@ p {
   margin-bottom: var(--spacing-sm);
 }
 
+.build-meta {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
 .build-item p {
   margin-bottom: var(--spacing-md);
 }
