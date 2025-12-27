@@ -20,6 +20,7 @@
 | `appraising.html` | Appraisal services + Expert Witness section |
 | `ai-consulting.html` | AI consulting + 22 speaking events |
 | `writing.html` | Links to Substack |
+| `builds.html` | AI-assisted projects (Migration Flow Tool, etc.) |
 | `css/styles.css` | All styles, CSS variables, dark mode |
 | `js/main.js` | Dark mode toggle, active nav, staggered animations |
 | `images/headshot.png` | Profile photo |
